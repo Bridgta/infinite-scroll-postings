@@ -33,4 +33,25 @@ async function showPosts() {
     });
 }
 
+function showLoading() {
+    loading.classList.add("show");
+
+    setTimeout(() => {
+        page++;
+        showPosts();
+    }, 300);
+
+    setTimeout(() => {
+        loading.classList.remove("show");
+    }, 1000);
+}
+
 showPosts();
+
+window.addEventListener("scroll", () => {
+    const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+
+    if (scrollTop + clientHeight >= scrollHeight - 5) {
+        showLoading();
+    }
+});
