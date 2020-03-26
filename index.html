@@ -1,25 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Postings</title>
-</head>
-<body>
-    <h1>Quaretine Book Club</h1>
-    
-    <div class="fliter-container">
-        <input id="filter" class="filter" placeholder="Filter..posts"></input>
-    </div>
-    
-    <div id="post-container">
-        <div class="post">
-            <div class="number">1</div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Postings</title>
+    </head>
+    <body>
+        <h1>Quaretine Book Club</h1>
+
+        <div class="filter-container">
+            <input
+                type="text"
+                id="filter"
+                class="filter"
+                placeholder="Filter posts..."
+            />
         </div>
-    </div>
 
+        <div id="post-container">
+            <div class="post">
+                <div class="number">1</div>
+                <div class="class-info">
+                    <h2 class="post-title">Post One</h2>
+                    <p class="post-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Odit, quia accusamus! Reprehenderit nemo quas illum
+                        quidem totam cum a earum itaque sequi, velit iste, odit
+                        quos expedita provident, nostrum id.
+                    </p>
+                </div>
+            </div>
+            <div class="post">
+                <div class="number">2</div>
+                <div class="class-info">
+                    <h2 class="post-title">Post two</h2>
+                    <p class="post-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Odit, quia accusamus! Reprehenderit nemo quas illum
+                        quidem totam cum a earum itaque sequi, velit iste, odit
+                        quos expedita provident, nostrum id.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-    <script src="script.js"></script>
-</body>
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
 </html>
